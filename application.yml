@@ -1,0 +1,46 @@
+# spring:
+#   application:
+#     name: TranscationApi
+
+#   datasource:
+#     url: jdbc:mysql://localhost:3306/jpa
+#     username: root
+#     password: MySQL@07
+#     driver-class-name: com.mysql.cj.jdbc.Driver
+    
+   
+    
+# For H2 in memory database configuration 
+
+#spring:    
+#  datasource:  
+#    url=jdbc:h2:mem:testdb
+#    driverClassName=org.h2.Driver
+#    username=eyoba
+#    password=gojava
+#    
+#  jpa:
+#    database-platform=org.hibernate.dialect.h2Dialect
+
+# localhost:8081/h2-console  
+
+  #JPA Properties
+  # jpa:
+  #   show-sql: true
+  #   hibernate:
+  #     ddl-auto: update
+  #   properties:
+  #     hibernate:
+  #       dialect: org.hibernate.dialect.MySQLDialect
+
+eureka:
+   client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+   instance:
+     hostname: localhost
+     
+# server:
+#   port: 8082
